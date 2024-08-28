@@ -6,9 +6,22 @@
 
 <section class="text-center" x-data="{show:false}">
 
-    <button x-on:click="show=!show">expand</button>
 
-    <div x-show="show">
+    <h1>Hello there!</h1>
+
+    <p>This site is undergoing maintenance and will be a blog soon.</p>
+
+    <p>The following is just a test, but go ahead and try it. Blog signup form coming soon!</p>
+
+    <button class="btn btn-primary" x-on:click="show=!show">Click Me</button>
+
+    <div x-show="show"
+         x-transition:enter="transition ease-out duration-300"
+         x-transition:enter-start="opacity-0 scale-90"
+         x-transition:enter-end="opacity-100 scale-100"
+         x-transition:leave="transition ease-in duration-300"
+         x-transition:leave-start="opacity-100 scale-100"
+         x-transition:leave-end="opacity-0 scale-90">
         <p>"This...is a button"</p>
         <button class="btn btn-primary">Go</button>
         <p>"Dear God!"</p>
@@ -17,11 +30,4 @@
     </div>
 
 
-    <div x-data="{ open: false }">
-        <button @@click="open = true">Expand</button>
-
-        <span x-show="open">
-            Content...
-        </span>
-    </div>
 </section>
