@@ -1,0 +1,27 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<section class="text-center" x-data="{show:false}">
+
+    <button x-on:click="show=!show">expand</button>
+
+    <div x-show="show">
+        <p>"This...is a button"</p>
+        <button class="btn btn-primary">Go</button>
+        <p>"Dear God!"</p>
+        <p>"There's more..."</p>
+        <p>"Nooooo....."</p>
+    </div>
+
+
+    <div x-data="{ open: false }">
+        <button @@click="open = true">Expand</button>
+
+        <span x-show="open">
+            Content...
+        </span>
+    </div>
+</section>
