@@ -16,4 +16,12 @@
     <PackageReference Include="Hydro" Version="0.14.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <AdditionalFiles Include="Pages\Components\Counter.cshtml" />
+    <AdditionalFiles Include="Pages\Components\HydroFooter.cshtml" />
+    <AdditionalFiles Include="Pages\Components\HydroNav.cshtml" />
+    <AdditionalFiles Include="Pages\Components\HydroSelect.cshtml" />
+    <AdditionalFiles Include="Pages\Health\Index.cshtml" />
+  </ItemGroup>
+
 </Project>
